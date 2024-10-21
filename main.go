@@ -6,20 +6,21 @@ import (
 )
 
 func main() {
+	// Temporary sender since we don't have networking code yet
 	writer := bufio.NewWriter(os.Stdout)
-	cmdMsg := MsgJoin{
+	send := func(data []byte) error {
+		_, err := writer.Write(data)
+		if err != nil {
+			return err
+		}
+		err = writer.Flush()
+		return err
+	}
+
+	msg := MsgJoin{
 		Target: []byte("target"),
 	}
-	msg := Msg(cmdMsg)
-	encoded, err := encodeMsg(&msg)
-	if err != nil {
-		panic(err)
-	}
-	_, err = writer.Write(encoded)
-	if err != nil {
-		panic(err)
-	}
-	err = writer.Flush()
+	err := encodeSend(send, msg)
 	if err != nil {
 		panic(err)
 	}
