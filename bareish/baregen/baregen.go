@@ -9,7 +9,7 @@ import (
 	"strings"
 	"text/template"
 
-	"git.sr.ht/~runxiyu/lotor/bareish/schema"
+	"lotor/bareish/schema"
 )
 
 const templateString = `
@@ -21,7 +21,7 @@ import (
 {{- if .schema.NeedErrors }}
 	"errors"
 {{- end }}
-	"git.sr.ht/~runxiyu/lotor/bareish"
+	"lotor/bareish"
 )
 
 {{ define "type" }}

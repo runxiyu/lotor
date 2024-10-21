@@ -1,7 +1,7 @@
 package main
 
 import (
-	"git.sr.ht/~runxiyu/lotor/bareish"
+	"lotor/bareish"
 )
 
 func decodeMsg(data []byte, val *Msg) error {

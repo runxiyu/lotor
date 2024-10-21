@@ -7,7 +7,7 @@ import (
 	"reflect"
 	"regexp"
 
-	"git.sr.ht/~runxiyu/lotor/bareish"
+	"lotor/bareish"
 )
 
 var (

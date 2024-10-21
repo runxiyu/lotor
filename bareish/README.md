@@ -1,4 +1,4 @@
-# go-barish
+# bareish
 
 An implementation of a [BARE](https://baremessages.org)-like message format for
 Go. This is a fork of [go-bare](https://git.sr.ht/~sircmpwn/go-bare).

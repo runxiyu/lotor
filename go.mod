@@ -1,3 +1,3 @@
-module git.sr.ht/~runxiyu/lotor
+module lotor
 
 go 1.18
