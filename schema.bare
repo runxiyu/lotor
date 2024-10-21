@@ -1,13 +1,13 @@
-type CmdMsg {
+type Msg (
+	MsgMsg |
+	MsgJoin
+)
+
+type MsgMsg {
 	target: data
 	payload: data
 }
 
-type CmdJoin {
+type MsgJoin {
 	target: data
 }
-
-type Cmd (
-	CmdMsg |
-	CmdJoin
-)
