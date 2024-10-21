@@ -11,7 +11,7 @@ import (
 )
 
 var (
-	intType = reflect.TypeOf(bareish.Int(0))
+	intType  = reflect.TypeOf(bareish.Int(0))
 	uintType = reflect.TypeOf(bareish.Uint(0))
 )
 

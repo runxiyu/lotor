@@ -7,7 +7,7 @@ type SchemaType interface {
 }
 
 type UserDefinedType struct {
-	name string
+	name  string
 	type_ Type
 }
 
@@ -95,57 +95,57 @@ const (
 func (tk TypeKind) String() string {
 	switch tk {
 	case UINT:
-		return "UINT";
+		return "UINT"
 	case U8:
-		return "U8";
+		return "U8"
 	case U16:
-		return "U16";
+		return "U16"
 	case U32:
-		return "U32";
+		return "U32"
 	case U64:
-		return "U64";
+		return "U64"
 	case INT:
-		return "INT";
+		return "INT"
 	case I8:
-		return "I8";
+		return "I8"
 	case I16:
-		return "I16";
+		return "I16"
 	case I32:
-		return "I32";
+		return "I32"
 	case I64:
-		return "I64";
+		return "I64"
 	case F32:
-		return "F32";
+		return "F32"
 	case F64:
-		return "F64";
+		return "F64"
 	case Bool:
-		return "Bool";
+		return "Bool"
 	case String:
-		return "String";
+		return "String"
 	case Void:
-		return "Void";
+		return "Void"
 	case Data:
-		return "Data";
+		return "Data"
 	case DataFixed:
-		return "DataFixed";
+		return "DataFixed"
 	case Array:
-		return "Array";
+		return "Array"
 	case Slice:
-		return "Slice";
+		return "Slice"
 	case Optional:
-		return "Optional";
+		return "Optional"
 	case DataArray:
-		return "DataArray";
+		return "DataArray"
 	case DataSlice:
-		return "DataSlice";
+		return "DataSlice"
 	case Map:
-		return "Map";
+		return "Map"
 	case Union:
-		return "Union";
+		return "Union"
 	case Struct:
-		return "Struct";
+		return "Struct"
 	case UserType:
-		return "UserType";
+		return "UserType"
 	default:
 		return "?"
 	}
@@ -265,7 +265,7 @@ func (st *StructType) Fields() []StructField {
 }
 
 type StructField struct {
-	name string
+	name  string
 	type_ Type
 }
 

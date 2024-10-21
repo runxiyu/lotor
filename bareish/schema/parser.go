@@ -10,8 +10,8 @@ import (
 var (
 	userTypeNameRE = regexp.MustCompile(`[A-Z][A-Za-z0-9]*`)
 	userEnumNameRE = regexp.MustCompile(`[A-Z][A-Za-z0-9]*`)
-	fieldNameRE = regexp.MustCompile(`[a-z][A-Za-z0-9]*`)
-	enumValueRE = regexp.MustCompile(`[A-Z][A-Z0-9_]*`)
+	fieldNameRE    = regexp.MustCompile(`[a-z][A-Za-z0-9]*`)
+	enumValueRE    = regexp.MustCompile(`[A-Z][A-Z0-9_]*`)
 )
 
 // Returned when the lexer encounters an unexpected token

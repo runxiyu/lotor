@@ -201,15 +201,15 @@ func main() {
 		log.Fatalf("--- error formatting source code: %v", err)
 	}
 
-	err = os.WriteFile(cfg.Out, formatted, 0644)
+	err = os.WriteFile(cfg.Out, formatted, 0o644)
 	if err != nil {
 		log.Fatalf("error writing output to %s: %e", cfg.Out, err)
 	}
 }
 
 type Config struct {
-	In          string
-	Out         string
+	In  string
+	Out string
 }
 
 func parseArgs() *Config {

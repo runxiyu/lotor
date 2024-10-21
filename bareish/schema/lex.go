@@ -110,7 +110,7 @@ func (sc *Scanner) scanWord() (Token, error) {
 
 	for {
 		r, _, err := sc.br.ReadRune()
-		if err != nil  {
+		if err != nil {
 			if err == io.EOF {
 				break
 			}
@@ -177,7 +177,7 @@ func (sc *Scanner) scanInteger() (Token, error) {
 
 	for {
 		r, _, err := sc.br.ReadRune()
-		if err != nil  {
+		if err != nil {
 			if err == io.EOF {
 				break
 			}
