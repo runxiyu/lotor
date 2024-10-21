@@ -1,0 +1,4 @@
+*.test
+*.prof
+*.log
+cmd/gen/gen

@@ -1,18 +1,18 @@
 package main
 
 import (
-	bare "git.sr.ht/~runxiyu/go-bareish"
+	"git.sr.ht/~runxiyu/lotor/bareish"
 )
 
 func decodeMsg(data []byte, val *Msg) error {
-	return bare.Unmarshal(data, val)
+	return bareish.Unmarshal(data, val)
 }
 
 func encodeMsg(val *Msg) ([]byte, error) {
-	return bare.Marshal(val)
+	return bareish.Marshal(val)
 }
 
-func encodeSend(send func([]byte) error, val interface{ bare.Union }) error {
+func encodeSend(send func([]byte) error, val interface{ bareish.Union }) error {
 	msg := Msg(val)
 	return encodeMsgSend(send, &msg)
 }
