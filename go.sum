@@ -1,5 +1,6 @@
 git.sr.ht/~runxiyu/go-bareish v0.0.0-20241020224251-cbd509d6f929 h1:P7gOk+Phv0nFO4oz9Fgl98uAl2+OW3EqsZ4Xq6Yg/fE=
 git.sr.ht/~runxiyu/go-bareish v0.0.0-20241020224251-cbd509d6f929/go.mod h1:IqYkfSouLVON6xufwjQCuhY6pbjs19C8St+vcXnBs2I=
+git.sr.ht/~sircmpwn/getopt v0.0.0-20191230200459-23622cc906b3 h1:4wDp4BKF7NQqoh73VXpZsB/t1OEhDpz/zEpmdQfbjDk=
 git.sr.ht/~sircmpwn/getopt v0.0.0-20191230200459-23622cc906b3/go.mod h1:wMEGFFFNuPos7vHmWXfszqImLppbc0wEhh6JBfJIUgw=
 git.sr.ht/~sircmpwn/go-bare v0.0.0-20210406120253-ab86bc2846d9 h1:Ahny8Ud1LjVMMAlt8utUFKhhxJtwBAualvsbc/Sk7cE=
 git.sr.ht/~sircmpwn/go-bare v0.0.0-20210406120253-ab86bc2846d9/go.mod h1:BVJwbDfVjCjoFiKrhkei6NdGcZYpkDkdyCdg1ukytRA=
